@@ -16,3 +16,7 @@ jobs:
       run: make docker-build
     - name: Run tests
       run: make docker-runtest-all
+    - name: Codacy Analysis CLI
+    # You may pin to the exact commit or the version.
+    # uses: codacy/codacy-analysis-cli-action@0de770495bd94bdac1ba7d5043a72b252ddbeec3
+      uses: codacy/codacy-analysis-cli-action@4.0.0
